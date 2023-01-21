@@ -28,7 +28,20 @@ class ProductScreen extends StatelessWidget {
               ),
               itemBuilder: ((context, index) {
                 final product = products[index];
-                return GridTile(child: Image.network(product.imageUrl));
+                return GridTile(
+                  // footer: Text(product.title),
+                  footer: GridTileBar(
+                    backgroundColor: Colors.black38,
+                    title: Text(
+                      product.title,
+                      textAlign: TextAlign.center,
+                    ),
+                  ),
+                  child: Image.network(
+                    product.imageUrl,
+                    fit: BoxFit.cover,
+                  ),
+                );
               }),
             );
           }
