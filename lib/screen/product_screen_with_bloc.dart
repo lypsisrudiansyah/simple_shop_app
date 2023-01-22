@@ -2,14 +2,29 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:simple_shop_app/bloc/product/product_bloc.dart';
 
-class ProductScreenWithBloc extends StatelessWidget {
+class ProductScreenWithBloc extends StatefulWidget {
   const ProductScreenWithBloc({super.key});
 
+  @override
+  State<ProductScreenWithBloc> createState() => _ProductScreenWithBlocState();
+}
+
+class _ProductScreenWithBlocState extends State<ProductScreenWithBloc> {
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    Future.microtask(() {
+      context.read<ProductBloc>().add(OnProductEventCalled());
+
+    });
+  }
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Our Shop"),
+        title: const Text("Our Shop - BLOC"),
       ),
       body: BlocBuilder<ProductBloc, ProductState>(
         builder: (context, state) {

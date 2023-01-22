@@ -1,21 +1,33 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:simple_shop_app/bloc/product/product_bloc.dart';
+import 'package:simple_shop_app/cubit/product/product_cubit.dart';
 
-class ProductScreenWithCubit extends StatelessWidget {
+class ProductScreenWithCubit extends StatefulWidget {
   const ProductScreenWithCubit({super.key});
 
+  @override
+  State<ProductScreenWithCubit> createState() => _ProductScreenWithCubitState();
+}
+
+class _ProductScreenWithCubitState extends State<ProductScreenWithCubit> {
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    context.read<ProductCubit>().getProducts();
+  }
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Our Shop"),
+        title: const Text("Our Shop - Cubit"),
       ),
-      body: BlocBuilder<ProductBloc, ProductState>(
+      body: BlocBuilder<ProductCubit, ProductState2>(
         builder: (context, state) {
-          if (state is ProductLoading) {
+          if (state is ProductLoading2) {
             return const Center(child: CircularProgressIndicator());
-          } else if (state is ProductLoaded) {
+          } else if (state is ProductLoaded2) {
             final products = state.result;
 
             return GridView.builder(
