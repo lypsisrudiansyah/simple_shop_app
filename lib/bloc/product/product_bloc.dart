@@ -10,7 +10,7 @@ class ProductBloc extends Bloc<ProductEvent, ProductState> {
   ProductBloc() : super(ProductInitial()) {
     on<OnProductEventCalled>((event, emit) async {
       emit(ProductLoading());
-      await Future.delayed(const Duration(seconds: 3));
+      await Future.delayed(const Duration(milliseconds: 2500));
       emit(ProductLoaded(productsData));
     });
   }
