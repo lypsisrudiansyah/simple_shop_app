@@ -24,7 +24,7 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => const ProductScreenWithCubit()));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => const ProductScreenWithBloc()));
               },
               child: const Text("Product Screen(BLOC)"),
             ),
@@ -36,7 +36,7 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => const ProductScreenWithBloc()));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => const ProductScreenWithCubit()));
               },
               child: const Text("Product Screen(CUBIT)"),
             ),
