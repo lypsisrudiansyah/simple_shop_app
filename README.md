@@ -1,8 +1,11 @@
 # simple_shop_app
 
-A new Flutter project.
+## Preview Images
+![simpleShopApp](https://github.com/lypsisrudiansyah/simple_shop_app/assets/52348378/ba8fdfad-05f6-48bb-9f98-e197b64d6248)
 
-## Getting Started
+## Preview Video
+https://github.com/lypsisrudiansyah/simple_shop_app/assets/52348378/ceaaf854-7227-4cd4-8041-fb682d91a7eb
+
 
 This project is a starting point for a Flutter application.
 
