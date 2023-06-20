@@ -1,4 +1,4 @@
-# simple_shop_app
+# Simple Shop App
 
 ## Preview Images
 ![simpleShopApp](https://github.com/lypsisrudiansyah/simple_shop_app/assets/52348378/ba8fdfad-05f6-48bb-9f98-e197b64d6248)
