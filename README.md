@@ -6,9 +6,7 @@
 ## Preview Video
 https://github.com/lypsisrudiansyah/simple_shop_app/assets/52348378/ceaaf854-7227-4cd4-8041-fb682d91a7eb
 
-
-This project is a starting point for a Flutter application.
-
+## Getting Started for Flutter
 A few resources to get you started if this is your first Flutter project:
 
 - [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
