@@ -1,7 +1,8 @@
 # Simple Shop App
 
 ## Preview Images
-![simpleShopApp](https://github.com/lypsisrudiansyah/simple_shop_app/assets/52348378/ba8fdfad-05f6-48bb-9f98-e197b64d6248)
+![simpleshop2](https://github.com/lypsisrudiansyah/simple_shop_app/assets/52348378/7b1e0768-c30e-44c0-a839-de55c2992f53)
+
 
 ## Preview Video
 https://github.com/lypsisrudiansyah/simple_shop_app/assets/52348378/ceaaf854-7227-4cd4-8041-fb682d91a7eb
